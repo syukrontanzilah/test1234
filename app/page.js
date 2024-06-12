@@ -4,7 +4,7 @@ import axios from "axios";
 export default function Home() {
   return (
     <div>
-      halo aja sih lagi apa ya
+      test halaman depan
     </div>
   );
 }

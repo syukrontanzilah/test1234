@@ -4,7 +4,7 @@ import axios from "axios";
 export default function Home() {
   return (
     <div>
-      test halaman depan
+      <input placeholder="Input disini"/>
     </div>
   );
 }

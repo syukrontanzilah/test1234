@@ -116,11 +116,26 @@
     
     
 
-  /* @layer base {
+  @layer base {
     * {
       @apply border-border;
     }
     body {
       @apply bg-background text-foreground;
     }
-  } */
+  }
+
+  .h1 {
+    @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
+  }
+
+  .subtitle {
+    @apply text-muted-foreground text-lg mb-8 font-light;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .text-center-imp{
+      text-align: center;
+    }
+  }

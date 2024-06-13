@@ -31,9 +31,34 @@ const Hero = () => {
                       </Link>
                       <Button variant='secondary' className='gap-x-2'>Download CV <Download size={18}/></Button>
                     </div>
+                    {/* sosmed */}
+                    <Socials
+                    containerStyles='flex gap-x-6 mx-auto xl:mx-0'
+                    iconStyles = 'text-foreground text-[22px] hover:text-primary transition-all'
+                    />
                 </div>
                 {/* image */}
-                <div className='hidden xl:flex relative'>image nih</div>
+                <div className='hidden xl:flex relative'>
+                    {/* badge 1 */}
+                    <Badge 
+                      containerStyles='absolute top-[65%] -right-8'
+                      icon={<RiBriefcase4Fill/>}
+                      endCountNum={2}
+                      endCountText="+"
+                      badgeText={'Years of experience'}
+                    />
+                    {/* badge 2 */}
+                    <Badge 
+                      containerStyles='absolute top-[80%] -left-[35rem]'
+                      icon={<RiTodoFill/>}
+                      endCountNum={10}
+                      endCountText ={''}
+                      badgeText={'Finished Project'}
+                    />
+                  <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'>
+                <DevImg containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom' imgSrc='/hero/developer.png'/>
+                  </div>
+                </div>
             </div>
             {/* icon */}
             <div className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>

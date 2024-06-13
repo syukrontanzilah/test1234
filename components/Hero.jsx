@@ -22,11 +22,14 @@ const Hero = () => {
                     <div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>
                         Frontend Developer
                     </div>
-                    <h1 className='h1 mb-4'>Hello, my name is Syukron Tanzil</h1>
-                    <p className='subtitle'>Brief description with insights into myself, my vocational journey, and what I engage in professionally</p>
+                    <h1 className='h1 mb-4'>Hi, my name is Syukron Tanzil</h1>
+                    <p className='subtitle max-w-[498px] mx-auto xl:mx-0'>Brief description with insights into myself, my vocational journey, and what I engage in professionally</p>
                     {/* button */}
-                    <div>
-                        Button
+                    <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
+                      <Link href={'/contact'}>
+                        <Button className='gap-x-2'>Contact me <Send size={18}/></Button>
+                      </Link>
+                      <Button variant='secondary' className='gap-x-2'>Download CV <Download size={18}/></Button>
                     </div>
                 </div>
                 {/* image */}

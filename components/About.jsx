@@ -114,21 +114,38 @@ const About = () => {
                 {/* tabs */}
                 <div className="flex-1">
                     <Tabs defaultValue="personal">
-                        <TabsList>
-                            <TabsTrigger value='personal'>Personal Info</TabsTrigger>
-                            <TabsTrigger value='qualifications'>Qualifications</TabsTrigger>
-                            <TabsTrigger value='skills'>Skills</TabsTrigger>
+                        <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none'>
+                            <TabsTrigger className='w-[162px] xl:w-auto' value='personal'>Personal Info</TabsTrigger>
+                            <TabsTrigger  className='w-[162px] xl:w-auto'value='qualifications'>Qualifications</TabsTrigger>
+                            <TabsTrigger  className='w-[162px] xl:w-auto' value='skills'>Skills</TabsTrigger>
                         </TabsList>
                         {/* tab content */}
-                        <div>
+                        <div className="text-lg mt-12 xl:mt-8">
+                            {/* personal */}
                             <TabsContent value='personal'>
-                                personal information
+                              <div className="">
+                                <h3 className="h3 mb-4">Unmatched service quality for over 10 years</h3>
+                                <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                                    I specialize in crafting intuitive websites with cutting-edge technology, delivering dynamic and engaging user experiences.
+                                </p>
+                                {/* icon */}
+                                <div>
+                                  {infoData.map((item, i)=>{
+                                    return(
+                                        <div className="flex items-center" key={i}>
+                                         <div className="text-primary">{item.icon}</div>
+                                         <div>{item.text}</div>
+                                        </div>
+                                    )
+                                  })}
+                                </div>
+                              </div>
                             </TabsContent>
                             <TabsContent value='qualifications'>
                                 qualification
                             </TabsContent>
                             <TabsContent value='skills'>
-                               skills
+                               skills info
                             </TabsContent>
                         </div>
                     </Tabs>

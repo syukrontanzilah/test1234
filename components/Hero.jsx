@@ -49,19 +49,22 @@ const Hero = () => {
                     />
                     {/* badge 2 */}
                     <Badge 
-                      containerStyles='absolute top-[80%] -left-[35rem]'
+                      containerStyles='absolute top-[84%] -left-[35rem]'
                       icon={<RiTodoFill/>}
                       endCountNum={10}
                       endCountText ={''}
                       badgeText={'Finished Project'}
                     />
-                  <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'>
+                  <div 
+                  // className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'
+                  className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[495px] h-[428px] bg-no-repeat absolute -top-1 -right-2'
+                  >
                 <DevImg 
                 // containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom' 
                 // imgSrc='/hero/developer.png'
 
-                containerStyles='w-[410px] h-[515px] bg-no-repeat relative bg-bottom' 
-                imgSrc='/hero/profile3.png'
+                containerStyles='w-[393px] h-[455px] bg-no-repeat relative bg-bottom' 
+                imgSrc='/hero/profile4.png'
                 />
                   </div>
                 </div>

@@ -49,22 +49,22 @@ const qualificationData = [
         data: [
             {
                 company : 'BMG Indonesia',
-                qualification: 'Frontend Developer',
+                role: 'Frontend Developer',
                 years : 'Oktober 2020 - Juni 2021'
             },
             {
                 company : 'BMG Indonesia',
-                qualification: 'Frontend Developer',
+                role: 'Frontend Developer',
                 years : 'Oktober 2020 - Juni 2021'
             },
             {
                 company : 'BMG Indonesia',
-                qualification: 'Frontend Developer',
+                role: 'Frontend Developer',
                 years : 'Oktober 2020 - Juni 2021'
             },
             {
                 company : 'BMG Indonesia',
-                qualification: 'Frontend Developer',
+                role: 'Frontend Developer',
                 years : 'Oktober 2020 - Juni 2021'
             }
         ]
@@ -129,20 +129,65 @@ const About = () => {
                                     I specialize in crafting intuitive websites with cutting-edge technology, delivering dynamic and engaging user experiences.
                                 </p>
                                 {/* icon */}
-                                <div>
+                                <div 
+                                // className="grid xl:grid-cols-2 gap-4 mb-12"
+                                className=" xl:grid xl:grid-cols-2 gap-4 mb-12"
+                                >
                                   {infoData.map((item, i)=>{
                                     return(
-                                        <div className="flex items-center" key={i}>
+                                        <div className="flex items-center gap-x-4 mx-auto xl:mx-0" key={i}>
                                          <div className="text-primary">{item.icon}</div>
                                          <div>{item.text}</div>
                                         </div>
                                     )
                                   })}
                                 </div>
+                                {/* language */}
+                                <div className="flex flex-col gap-y-2">
+                                    <div className="text-primary">Language Skill</div>
+                                    <div className="border-b border-border">Indonesia, Arab, English</div>
+                                </div>
                               </div>
                             </TabsContent>
+                            {/* qualifications */}
                             <TabsContent value='qualifications'>
-                                qualification
+                              <div>
+                                <h3 className="h3 mb-8 text-left">My awesome journey</h3>
+                                {/* experience & education wrapper */}
+                                <div>
+                                    {/* experience */}
+                                    <div>
+                                        <div className="flex gap-x-4 items-center text-[22px] text-primary">
+                                            <Briefcase/>
+                                            <h4 className='capitalize font-medium'>
+                                                {getData(qualificationData, 'experience').title}
+                                            </h4>
+                                        </div>
+                                        {/* list */}
+                                        <div className="flex flex-col gap-y-8">
+                                          {getData(qualificationData, 'experience').data.map((item, i)=>{
+                                            const {company, role, years} = item;
+                                            return(
+                                              <div 
+                                              className="flex gap-x-8 group "
+                                              key={i}>
+                                                <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                                    <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                                </div>
+                                                <div>
+                                                    <div className="font-semibold text-xl leading-none mb-2">{company}</div>
+                                                    <div className="text-lg leading-none text-muted-foreground mb-4">{role}</div>
+                                                    <div className="text-base font-medium">{years}</div>
+                                                </div>
+                                              </div>
+                                            )
+                                          })}
+                                        </div>
+                                    </div>
+                                    {/* education */}
+                                    <div>education</div>
+                                </div>
+                              </div>
                             </TabsContent>
                             <TabsContent value='skills'>
                                skills info

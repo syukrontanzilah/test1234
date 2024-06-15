@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Work from "@/components/Work";
 import Review from "@/components/Review";
+import Cta from "@/components/Cta";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Services/>
       <Work/>
       <Review/>
+      <Cta/>
     </main>
   );
 }

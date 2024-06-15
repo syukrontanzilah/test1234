@@ -11,11 +11,11 @@ import Link
  from 'next/link';
 
 const icons = [
-  {path:'/', name: <RiYoutubeFill/>},
-  {path:'/', name: <RiLinkedinFill/>},
-  {path:'/', name: <RiGithubFill/>},
-  {path:'/', name: <RiFacebookFill/>},
-  {path:'/', name: <RiInstagramFill/>},
+  // {path:'/', name: <RiYoutubeFill/>},
+  {path:'https://www.linkedin.com/in/syukron-tanzil-709750151', name: <RiLinkedinFill/>},
+  {path:'https://github.com/syukrontanzilah', name: <RiGithubFill/>},
+  // {path:'/', name: <RiFacebookFill/>},
+  {path:'', name: <RiInstagramFill/>},
 ]
 
 const Socials = ({containerStyles, iconStyles}) => {

@@ -18,10 +18,10 @@ import {
 
 const infoData = [
     {icon: <User2 size={20}/>, text: 'Syukron Tanzil'},
-    {icon: <PhoneCall size={20}/>, text: '087811400452'},
+    {icon: <PhoneCall size={20}/>, text: '087800149427'},
     {icon: <MailIcon size={20}/>, text: 'syukrontanzilah@gmail.com'},
-    {icon: <GraduationCap size={20}/>, text: 'D3 Businese Administration'},
-    {icon: <HomeIcon size={20}/>, text: 'Sukabumi - Jawa Barat - Indonesia'},
+    // {icon: <GraduationCap size={20}/>, text: 'D3 Businese Administration'},
+    {icon: <HomeIcon size={20}/>, text: 'Sukabumi - Indonesia'},
 ];
 
 const qualificationData = [
@@ -31,12 +31,12 @@ const qualificationData = [
             {
                 university: 'Rubicamp - Bandung',
                 qualification: 'Fullstack Developer',
-                years: 'November 2019 - Januari 2020'
+                years: 'November 2019 - February 2020'
             },
             {
                 university: 'Course-Net Indonesia',
                 qualification: 'Android Developer',
-                years : '2019'
+                years : 'August - September 2019'
             },
             {
                 university: 'BEC Bogor',
@@ -49,24 +49,24 @@ const qualificationData = [
         title: 'experience',
         data: [
             {
-                company : 'BMG Indonesia',
+                company : 'PT. Rembon Karya Digital',
                 role: 'Frontend Developer',
-                years : 'Oktober 2020 - Juni 2021'
+                years : 'January 2023 - Present'
             },
             {
-                company : 'BMG Indonesia',
+                company : 'Goorita.com',
                 role: 'Frontend Developer',
-                years : 'Oktober 2020 - Juni 2021'
+                years : 'August 2022 - December 2022'
             },
             {
-                company : 'BMG Indonesia',
+                company : 'Aksi Cepat Tanggap',
                 role: 'Frontend Developer',
-                years : 'Oktober 2020 - Juni 2021'
+                years : 'February - July 2022'
             },
             {
-                company : 'BMG Indonesia',
-                role: 'Frontend Developer',
-                years : 'Oktober 2020 - Juni 2021'
+                company : 'PT.Wijaya Karya Tbk',
+                role: 'Procurement Officer',
+                years : 'September - December 2021'
             }
         ]
     }
@@ -76,12 +76,17 @@ const skillData = [
     {
         title: 'skills',
         data: [
-            {name: 'HTML'},
-            {name: 'SCSS'},
-            {name: 'React'},
-            {name: 'Next.Js'},
-            {name: 'Node.Js'},
-            {name: 'Bootstraps'},
+            {name: 'HTML & SCSS'},
+            {name: 'React JS & Next JS'},
+            {name: 'React Native'},
+            {name: 'Bootstraps & Material UI'},
+            {name: 'Sadcn/ui & Tailwind Css'},
+            {name: 'Styled-component'},
+            {name: 'Javascript & Typescript'},
+            {name: 'Notion, Clickup, Jira'},
+            {name: 'Github & GitLab'},
+            {name: 'Highchart'},
+
         ]
     },
     {
@@ -126,7 +131,7 @@ const About = () => {
                             {/* personal */}
                             <TabsContent value='personal'>
                               <div className="">
-                                <h3 className="h3 mb-4">Unmatched service quality for over 10 years</h3>
+                                <h3 className="h3 mb-4">Unmatched service quality for over 2 years</h3>
                                 <p className="subtitle max-w-xl mx-auto xl:mx-0">
                                     I specialize in crafting intuitive websites with cutting-edge technology, delivering dynamic and engaging user experiences.
                                 </p>
@@ -154,7 +159,7 @@ const About = () => {
                             {/* qualifications */}
                             <TabsContent value='qualifications'>
                               <div>
-                                <h3 className="h3 mb-8 text-left">My awesome journey</h3>
+                                <h3 className="h3 mb-8 text-left">My journey</h3>
                                 {/* experience & education wrapper */}
                                 <div className="grid md:grid-cols-2 gap-y-8">
                                     {/* experience */}
@@ -166,7 +171,7 @@ const About = () => {
                                             </h4>
                                         </div>
                                         {/* list */}
-                                        <div className="flex flex-col gap-y-8">
+                                        <div className="flex flex-col gap-y-6">
                                           {getData(qualificationData, 'experience').data.map((item, i)=>{
                                             const {company, role, years} = item;
                                             return(
@@ -177,8 +182,8 @@ const About = () => {
                                                     <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                                 </div>
                                                 <div>
-                                                    <div className="font-semibold text-xl leading-none mb-2">{company}</div>
-                                                    <div className="text-lg leading-none text-muted-foreground mb-4">{role}</div>
+                                                    <div className="font-semibold text-xl leading-none mb-1">{company}</div>
+                                                    <div className="text-lg leading-none text-muted-foreground mb-2">{role}</div>
                                                     <div className="text-base font-medium">{years}</div>
                                                 </div>
                                               </div>
@@ -195,7 +200,7 @@ const About = () => {
                                             </h4>
                                         </div>
                                         {/* list */}
-                                        <div className="flex flex-col gap-y-8">
+                                        <div className="flex flex-col gap-y-6">
                                           {getData(qualificationData, 'education').data.map((item, i)=>{
                                             const {university, qualification, years} = item;
                                             return(
@@ -206,8 +211,8 @@ const About = () => {
                                                     <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                                 </div>
                                                 <div>
-                                                    <div className="font-semibold text-xl leading-none mb-2">{university}</div>
-                                                    <div className="text-lg leading-none text-muted-foreground mb-4">{qualification}</div>
+                                                    <div className="font-semibold text-xl leading-none mb-1">{university}</div>
+                                                    <div className="text-lg leading-none text-muted-foreground mb-2">{qualification}</div>
                                                     <div className="text-base font-medium">{years}</div>
                                                 </div>
                                               </div>
@@ -227,11 +232,11 @@ const About = () => {
                                     <h4 className="text-xl font-semibold mb-2">Skills</h4>
                                     <div className="border-b border-border mb-4"></div>
                                     {/* skill list */}
-                                    <div>
+                                    <div className="grid md:grid-cols-2 gap-y-0">
                                         {getData(skillData, 'skills').data.map((item, i)=> {
                                             const {name} = item
                                             return(
-                                                <div className="w-2/4 xl:text-left  xl:mx-0" key={i}>
+                                                <div className="w-3/4 xl:text-left  xl:mx-0" key={i}>
                                                  <div className="font-medium">{name}</div>
                                                 </div>
                                             )

@@ -4,6 +4,7 @@ import axios from "axios";
 import {useState, useEffect} from 'react'
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Services from "@/components/Services";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
     <main>
       <Hero/>
       <About/>
+      <Services/>
     </main>
   );
 }

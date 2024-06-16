@@ -6,12 +6,11 @@ import {Button} from'./ui/button';
 import 'swiper/css'
 import 'swiper/css/pagination'
 //import required modules
-import {Pagination} from 'swiper/modules';
+import {Pagination, Autoplay} from 'swiper/modules';
 import ProjectCard from "./ProjectCard";
 // import swiper react component
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { projectData } from "./DummyData";
-
 
 
 const Work = () => {
@@ -19,7 +18,7 @@ const Work = () => {
     <section className="relative mb-12 xl:mb-48">
         <div className="container mx-auto">
         {/* text */}
-        <div className="max-w-[400px] mx-auto xl:mx-0  xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
+        <div className="max-w-[350px] mx-auto xl:mx-0  xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
             <h2 className="section-title mb-4">Latest Projects</h2>
             <p className="subtitle mb-8">Below are the applications that I have completed</p>
             <Link href={'/projects'}>
@@ -27,7 +26,7 @@ const Work = () => {
             </Link>
         </div> 
           {/*slider nih */}
-          <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
+          <div className=" xl:max-w-[1000px] xl:absolute right-0 top-0 pr-12">
             <Swiper 
             className="h-[480px]" 
             slidesPerView={1}
@@ -37,8 +36,12 @@ const Work = () => {
               }  
             }}
             spaceBetween={30}
-            modules={[Pagination]}
+            modules={[Autoplay,Pagination]}
             pagination={{clickable: true}}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             >
                 {/* swiper apply first 4 project */}
                 {projectData.slice(0,4).map((proj, i)=> {

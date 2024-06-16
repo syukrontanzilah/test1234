@@ -3,7 +3,7 @@ export const projectData = [
         image:'/work/sekolahku.png',
         category: 'react native',
         name: 'Sekolahku',
-        description: 'NexaLorem ipsum dolor sit amet consectetur adipisicing elit',
+        description: 'Chat with teacher app',
         link: '/',
         github: '/'
     },
@@ -11,7 +11,7 @@ export const projectData = [
         image:'/work/toko-baju.png',
         category: 'react native',
         name: 'Toko Baju App',
-        description: 'Kamu nanya Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        description: 'Online shop',
         link: '/',
         github: '/'
     },
@@ -19,7 +19,7 @@ export const projectData = [
         image:'/work/quran.png',
         category: 'react native',
         name: 'Alquran Digital',
-        description: 'Aplikasi Alquran digital ',
+        description: 'Alquran digital application ',
         link: '/',
         github: '/'
     },
@@ -27,7 +27,7 @@ export const projectData = [
         image:'/work/resep-masakan.png',
         category: 'react native',
         name: 'Resep Masakan App',
-        description: 'Bayy Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        description: 'Recipes app',
         link: '/',
         github: '/'
     },
@@ -67,7 +67,7 @@ export const projectData = [
         image:'/work/bersamaumkm.png',
         category: 'react js',
         name: 'Bersama UMKM',
-        description: 'Udin Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        description: 'Forum and news website ',
         link: '/',
         github: '/'
     },

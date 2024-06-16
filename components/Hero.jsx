@@ -14,7 +14,7 @@ import Socials from './Socials';
 
 const Hero = () => {
   return (
-    <section className='py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
+    <section className='py-12 xl:py-24 xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
         <div className='container mx-auto'>
             <div className='flex justify-between gap-x-8'>
                 {/* text */}
@@ -30,7 +30,7 @@ const Hero = () => {
                    <div className='xl:hidden justify-center flex relative'>
                     {/* badge 1 */}
                     <Badge 
-                      containerStyles='absolute top-[65%] -right-[-2rem] '
+                      containerStyles='absolute top-[65%] -right-[-1rem] '
                       icon={<RiBriefcase4Fill/>}
                       endCountNum={2}
                       endCountText=""
@@ -38,7 +38,7 @@ const Hero = () => {
                     />
                     {/* badge 2 */}
                     <Badge 
-                      containerStyles='absolute top-[84%] -left-[-2rem]'
+                      containerStyles='absolute top-[84%] -left-[0rem]'
                       icon={<RiTodoFill/>}
                       endCountNum={10}
                       endCountText ={''}

@@ -79,7 +79,7 @@ const Hero = () => {
                    <div className='xl:hidden justify-center flex relative'>
                     {/* badge 1 */}
                     <Badge 
-                      containerStyles='absolute top-[55%] -right-[-2rem] '
+                      containerStyles='absolute top-[65%] -right-[-2rem] '
                       icon={<RiBriefcase4Fill/>}
                       endCountNum={2}
                       endCountText=""

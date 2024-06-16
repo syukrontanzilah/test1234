@@ -13,7 +13,8 @@ import {
     PhoneCall,
     GraduationCap,
     Calendar,
-    Briefcase
+    Briefcase,
+    Dot
 } from 'lucide-react'
 import Tools from "./Tools";
 
@@ -118,7 +119,7 @@ const About = () => {
                 {/* image */}
                 <div className="hidden xl:flex flex-1 relative">
                     <DevImgAbout containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative flex items-center justify-center' 
-                    imgSrc={'/hero/profile4.png'}
+                    imgSrc={'/about/working.png'}
                     height={455}
                     width={393}
                     />
@@ -137,7 +138,7 @@ const About = () => {
                             {/* personal */}
                             <TabsContent value='personal'>
                               <div className="">
-                                <h3 className="h3 mb-4">Unmatched service quality for over 2 years</h3>
+                                <h3 className="h3 mb-4">Experienced for more than 2 years</h3>
                                 <p className="subtitle max-w-xl mx-auto xl:mx-0">
                                     I specialize in crafting intuitive websites with cutting-edge technology, delivering dynamic and engaging user experiences.
                                 </p>
@@ -157,7 +158,7 @@ const About = () => {
                                 </div>
                                 {/* language */}
                                 <div className="flex flex-col gap-y-2">
-                                    <div className="text-primary">Language Skill</div>
+                                    <div className="text-primary">Language</div>
                                     <div className="border-b border-border">Indonesia, Arab, English</div>
                                 </div>
                               </div>
@@ -235,14 +236,15 @@ const About = () => {
                                 <h3 className="h3 mb-8">Skills I have</h3>
                                 {/* skills */}
                                 <div className="mb-16">
-                                    <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                                    <h4 className="text-xl font-semibold mb-2 text-primary">Skills</h4>
                                     <div className="border-b border-border mb-4"></div>
                                     {/* skill list */}
                                     <div className="grid md:grid-cols-2 gap-y-0">
                                         {getData(skillData, 'skills').data.map((item, i)=> {
                                             const {name} = item
                                             return(
-                                                <div className="w-3/4 xl:text-left  xl:mx-0" key={i}>
+                                                <div className="flex w-3/4 xl:text-left  xl:mx-0" key={i}>
+                                                <Dot />
                                                  <div className="font-medium">{name}</div>
                                                 </div>
                                             )
@@ -251,7 +253,7 @@ const About = () => {
                                 </div>
                                 {/* tools */}
                                 <div>
-                                    <h4 className="text-xl font-semibold mb-2 xl:text-left">Tools & Framework</h4>
+                                    <h4 className="text-xl font-semibold mb-2 xl:text-left text-primary">Tools & Framework</h4>
                                     <div className="border-b border-border mb-4"></div>
                                     {/* tools list */}
                                     {/* <div className="flex gap-x-8 justify-center xl:justify-start">

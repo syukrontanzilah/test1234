@@ -3,6 +3,7 @@ import {
   HomeIcon,
   PhoneCall
 } from 'lucide-react';
+import Image from 'next/image';
 
 const Contact = () => {
   return (
@@ -18,12 +19,20 @@ const Contact = () => {
             </div>
             <h1 className='h1 max-w-md mb-8'>Let's work together</h1>
             <p className='subtitle max-w-[400px]'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus accusantium laborum.
+            If you are interested in working together, don't hesitate to contact me.
             </p>
           </div>
           {/* ilustration */}
           <div className='xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat'></div>
         </div>
+        <div className='flex text-center justify-center'>
+            <Image
+            src={'/contact/illustration-dark.svg'}
+            width={250}
+            height={250}
+            className='xl:hidden mb-20'
+          />
+          </div>
         {/* info text and form */}
         <div className='grid xl:grid-cols-2 mb-24 xl:mb-32'>
           {/* info text */}
@@ -41,7 +50,7 @@ const Contact = () => {
             {/* mail */}
             <div className='flex items-center gap-x-8'>
               <PhoneCall size={18} className='text-primary'/>
-              <div>087823220303</div>
+              <div>087800149427</div>
             </div>
           </div>
         </div>

@@ -63,7 +63,7 @@ const Hero = () => {
                     {/* button */}
                     <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-6'>
                       <Link href={'/contact'}>
-                        <Button className='gap-x-2'>Contact me <Send size={18}/></Button>
+                        <Button className=' hidden gap-x-2'>Contact me <Send size={18}/></Button>
                       </Link>
                       <Button variant='secondary' className='hidden gap-x-2'>Download CV <Download size={18}/></Button>
                     </div>

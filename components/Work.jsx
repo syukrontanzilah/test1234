@@ -10,65 +10,9 @@ import {Pagination} from 'swiper/modules';
 import ProjectCard from "./ProjectCard";
 // import swiper react component
 import {Swiper, SwiperSlide} from 'swiper/react'
+import { projectData } from "./DummyData";
 
-const projectData = [
-    {
-        image:'/work/3.png',
-        category: 'react js',
-        name: 'Nexa Website',
-        description: 'NexaLorem ipsum dolor sit amet consectetur adipisicing elit',
-        link: '/',
-        github: '/'
-    },
-    {
-        image:'/work/2.png',
-        category: 'next js',
-        name: 'Udin Website',
-        description: 'Udin Lorem ipsum dolor sit amet consectetur adipisicing elit',
-        link: '/',
-        github: '/'
-    },
-    {
-        image:'/work/1.png',
-        category: 'next js',
-        name: 'Kamu nanya Website',
-        description: 'Kamu nanya Lorem ipsum dolor sit amet consectetur adipisicing elit',
-        link: '/',
-        github: '/'
-    },
-    {
-        image:'/work/4.png',
-        category: 'react native',
-        name: 'Mobilio honda nih',
-        description: 'Mobilio Lorem ipsum dolor sit amet consectetur adipisicing elit',
-        link: '/',
-        github: '/'
-    },
-    {
-        image:'/work/3.png',
-        category: 'react native',
-        name: 'Bayy mobile',
-        description: 'Bayy Lorem ipsum dolor sit amet consectetur adipisicing elit',
-        link: '/',
-        github: '/'
-    },
-    {
-        image:'/work/1.png',
-        category: 'react js',
-        name: 'Becanda aja website',
-        description: 'Becyandaa Lorem ipsum dolor sit amet consectetur adipisicing elit',
-        link: '/',
-        github: '/'
-    },
-    {
-        image:'/work/1.png',
-        category: 'react js',
-        name: 'Test aja sih ini mah',
-        description: 'Test aja Lorem ipsum dolor sit amet consectetur adipisicing elit',
-        link: '/',
-        github: '/'
-    },
-]
+
 
 const Work = () => {
   return (
@@ -77,7 +21,7 @@ const Work = () => {
         {/* text */}
         <div className="max-w-[400px] mx-auto xl:mx-0  xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
             <h2 className="section-title mb-4">Latest Projects</h2>
-            <p className="subtitle mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p className="subtitle mb-8">Below are the applications that I have completed</p>
             <Link href={'/projects'}>
                 <Button>All Projects</Button>
             </Link>

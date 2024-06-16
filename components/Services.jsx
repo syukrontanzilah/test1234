@@ -9,19 +9,19 @@ import {
 
 const serviceData = [
     {
-        icon: <GanttChartSquare size={72} strokeWidth={0.8}/>,
+        icon: <GanttChartSquare size={70} strokeWidth={0.8}/>,
         title: 'Web Development',
-        description: 'WWeb design Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+        description: 'Developing websites especially using Next Js framework.'
     },
     {
-        icon: <Blocks size={72} strokeWidth={0.8}/>,
+        icon: <Blocks size={70} strokeWidth={0.8}/>,
         title: 'Mobile Development',
-        description: 'Developmetm Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+        description: 'Developing mobile applications using React Native framework'
     },
     {
-        icon: <Gem size={72} strokeWidth={0.8}/>,
+        icon: <Gem size={70} strokeWidth={0.8}/>,
         title: 'App Design',
-        description: 'App Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+        description: 'Design and developing intuitive websites and mobile aplications mockup'
     },
 
 ]

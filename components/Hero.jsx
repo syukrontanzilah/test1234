@@ -26,7 +26,7 @@ const Hero = () => {
                     <p className='subtitle max-w-[498px] mx-auto xl:mx-0'>Brief description with insights into myself, my vocational journey, and what I engage in professionally</p>
 
                     {/* image in mobile */}
-                  <div className='xl:hidden bg-pink-0 mb-30 mt-[-20px] '>
+                  <div className='xl:hidden bg-pink-0 mb-50 mt-[-20px] '>
                    <div className='xl:hidden justify-center flex relative'>
                     {/* badge 1 */}
                     <Badge 

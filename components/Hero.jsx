@@ -74,6 +74,42 @@ const Hero = () => {
                 <RiArrowDownSLine className='text-3xl text-primary'/>
             </div>
         </div>
+                  {/* image in mobile */}
+                  <div className='bg-pink-0'>
+                   <div className='xl:hidden xl:flex relative'>
+                    {/* badge 1 */}
+                    <Badge 
+                      containerStyles='absolute top-[55%] -right-[-2rem] '
+                      icon={<RiBriefcase4Fill/>}
+                      endCountNum={2}
+                      endCountText=""
+                      badgeText={'Years of experience'}
+                    />
+                    {/* badge 2 */}
+                    <Badge 
+                      containerStyles='absolute top-[84%] -left-[-2rem]'
+                      icon={<RiTodoFill/>}
+                      endCountNum={10}
+                      endCountText ={''}
+                      badgeText={'Finished Project'}
+                    />
+                  <div 
+                  // className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'
+                  // className='
+                  // bg-hero_shape2_light dark:bg-hero_shape2_dark w-[420px] h-[480px] bg-no-repeat absolute -top-0 -right-0'
+
+                  >
+                <DevImg 
+                // containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom' 
+                // imgSrc='/hero/developer.png'
+
+                containerStyles='w-[335px] h-[385px] bg-no-repeat relative bg-bottom mt-10' 
+                imgSrc='/hero/profile4.png'
+                />
+                  </div>
+                </div>  
+                  </div>
+                 
     </section>
   )
 }

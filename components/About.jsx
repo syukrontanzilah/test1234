@@ -109,7 +109,7 @@ const About = () => {
     // console.log('getdata', getData(qualificationData, 'education'))
     console.log('skill data', skillData)
   return (
-    <section className="xl:h-[860px] pb-0 xl:py-0 mt-200 xl:mt-48 mb-24 xl:mb-0">
+    <section className="xl:h-[860px] pb-0 xl:py-0 xl:mt-48 mb-24 xl:mb-0">
         <div className="container m-auto">
             <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">About me
             </h2>

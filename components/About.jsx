@@ -1,4 +1,4 @@
-import DevImg from "./DevImg";
+import DevImg, { DevImgAbout } from "./DevImg";
 import Image from "next/image";
 import {
     Tabs, 
@@ -15,6 +15,7 @@ import {
     Calendar,
     Briefcase
 } from 'lucide-react'
+import Tools from "./Tools";
 
 const infoData = [
     {icon: <User2 size={20}/>, text: 'Syukron Tanzil'},
@@ -85,7 +86,7 @@ const skillData = [
             {name: 'Javascript & Typescript'},
             {name: 'Notion, Clickup, Jira'},
             {name: 'Github & GitLab'},
-            {name: 'Highchart'},
+            {name: 'Typing Skill'},
 
         ]
     },
@@ -116,8 +117,13 @@ const About = () => {
             <div className="flex flex-col xl:flex-row">
                 {/* image */}
                 <div className="hidden xl:flex flex-1 relative">
-                    <DevImg containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative' imgSrc={'/about/developer.png'}/>
+                    <DevImgAbout containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative flex items-center justify-center' 
+                    imgSrc={'/hero/profile4.png'}
+                    height={455}
+                    width={393}
+                    />
                 </div>
+
                 {/* tabs */}
                 <div className="flex-1">
                     <Tabs defaultValue="personal">
@@ -226,7 +232,7 @@ const About = () => {
                             {/* skills and tools*/}
                             <TabsContent value='skills'>
                                <div className="xl:text-left">
-                                <h3 className="h3 mb-8">Tools I use everyday</h3>
+                                <h3 className="h3 mb-8">Skills I have</h3>
                                 {/* skills */}
                                 <div className="mb-16">
                                     <h4 className="text-xl font-semibold mb-2">Skills</h4>
@@ -245,10 +251,10 @@ const About = () => {
                                 </div>
                                 {/* tools */}
                                 <div>
-                                    <h4 className="text-xl font-semibold mb-2 xl:text-left">Tools</h4>
+                                    <h4 className="text-xl font-semibold mb-2 xl:text-left">Tools & Framework</h4>
                                     <div className="border-b border-border mb-4"></div>
                                     {/* tools list */}
-                                    <div className="flex gap-x-8 justify-center xl:justify-start">
+                                    {/* <div className="flex gap-x-8 justify-center xl:justify-start">
                                     {getData(skillData, 'tools').data.map((item, i)=> {
                                             const {imgPath} = item
                                             return(
@@ -263,7 +269,15 @@ const About = () => {
                                                 </div>
                                             )
                                         })}
+                                    </div> */}
+                                    {/* tools */}
+                                    <div className="">
+                                         <Tools
+                                        containerStyles='flex gap-x-6 mx-auto xl:mx-0 flex-wrap'
+                                        iconStyles = 'text-foreground text-[35px] mb-2 '
+                                        />   
                                     </div>
+                                
                                 </div>
                                </div>
                             </TabsContent>

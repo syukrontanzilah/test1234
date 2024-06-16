@@ -75,8 +75,8 @@ const Hero = () => {
             </div>
         </div>
                   {/* image in mobile */}
-                  <div className='bg-pink-0'>
-                   <div className='xl:hidden xl:flex relative'>
+                  <div className='bg-pink-0 mt-10 '>
+                   <div className='xl:hidden justify-center flex relative'>
                     {/* badge 1 */}
                     <Badge 
                       containerStyles='absolute top-[55%] -right-[-2rem] '

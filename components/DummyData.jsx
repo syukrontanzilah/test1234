@@ -8,6 +8,22 @@ export const projectData = [
         github: '/'
     },
     {
+        image:'/work/pam2.png',
+        category: 'next js',
+        name: 'PAM Cargo',
+        description: 'Shipment Management system',
+        link: '/',
+        github: '/'
+    },
+    {
+        image:'/work/halalhub.png',
+        category: 'next js',
+        name: 'GHH Smart System',
+        description: 'Warehouse Management system',
+        link: '/',
+        github: '/'
+    },
+    {
         image:'/work/toko-baju.png',
         category: 'react native',
         name: 'Toko Baju App',
@@ -20,6 +36,14 @@ export const projectData = [
         category: 'react native',
         name: 'Alquran Digital',
         description: 'Alquran digital application ',
+        link: '/',
+        github: '/'
+    },
+    {
+        image:'/work/goorita.png',
+        category: 'next js',
+        name: 'Goorita.com',
+        description: 'Company profile website',
         link: '/',
         github: '/'
     },

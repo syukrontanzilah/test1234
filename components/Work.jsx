@@ -26,7 +26,7 @@ const Work = () => {
             </Link>
         </div> 
           {/*slider nih */}
-          <div className=" xl:max-w-[1000px] xl:absolute right-0 top-0 pr-12">
+          <div className=" xl:max-w-[1000px] xl:absolute right-0 top-0 xl:pr-[5%]">
             <Swiper 
             className="h-[480px]" 
             slidesPerView={1}

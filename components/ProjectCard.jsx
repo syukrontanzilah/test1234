@@ -20,18 +20,18 @@ const ProjectCard = ({project}) => {
                  priority
                 />
                 {/* btn link */}
-                <div className="flex gap-x-4">
+                {/* <div className="flex gap-x-4">
                     <Link 
                     className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
                     href={project.link}>
                         <LinkIcon className="text-white"/>
                     </Link>
-                    {/* <Link 
+                    <Link 
                     className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
                     href={project.github}>
                         <Github className="text-white"/>
-                    </Link> */}
-                </div>
+                    </Link>
+                </div> */}
             </div>
         </CardHeader>
         <div className="h-full px-8 py-6">

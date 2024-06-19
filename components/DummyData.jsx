@@ -16,7 +16,7 @@ export const projectData = [
         github: '/'
     },
     {
-        image:'/work/pam2.png',
+        image:'/work/pamcargo2.jpg',
         category: 'next js',
         name: 'PAM Cargo',
         description: 'Shipment Management system',
@@ -24,7 +24,7 @@ export const projectData = [
         github: '/'
     },
     {
-        image:'/work/halalhub.png',
+        image:'/work/halalhub2.jpg',
         category: 'react js',
         name: 'GHH Smart System',
         description: 'Warehouse Management system',
@@ -48,7 +48,7 @@ export const projectData = [
         github: '/'
     },
     {
-        image:'/work/goorita.png',
+        image:'/work/goorita2.jpg',
         category: 'next js',
         name: 'Goorita.com',
         description: 'Company profile website',

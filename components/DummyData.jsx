@@ -1,5 +1,13 @@
 export const projectData = [
     {
+        image:'/work/inder.jpg',
+        category: 'next js',
+        name: 'Indonesia dermawan',
+        description: 'Platform web donasi online',
+        link: '/',
+        github: '/'
+    },
+    {
         image:'/work/sekolahku.png',
         category: 'react native',
         name: 'Sekolahku',
@@ -17,7 +25,7 @@ export const projectData = [
     },
     {
         image:'/work/halalhub.png',
-        category: 'next js',
+        category: 'react js',
         name: 'GHH Smart System',
         description: 'Warehouse Management system',
         link: '/',

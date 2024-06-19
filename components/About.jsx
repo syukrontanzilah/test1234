@@ -7,108 +7,19 @@ import {
     TabsTrigger
 } from '@/components/ui/tabs'
 import {
-    User2,
-    MailIcon,
-    HomeIcon,
-    PhoneCall,
     GraduationCap,
-    Calendar,
     Briefcase,
     Dot
 } from 'lucide-react'
 import Tools from "./Tools";
-
-const infoData = [
-    {icon: <User2 size={20}/>, text: 'Syukron Tanzil'},
-    {icon: <PhoneCall size={20}/>, text: '087800149427'},
-    {icon: <MailIcon size={20}/>, text: 'syukrontanzilah@gmail.com'},
-    // {icon: <GraduationCap size={20}/>, text: 'D3 Businese Administration'},
-    {icon: <HomeIcon size={20}/>, text: 'Sukabumi - Indonesia'},
-];
-
-const qualificationData = [
-    {
-        title:'education',
-        data:[
-            {
-                university: 'Rubicamp - Bandung',
-                qualification: 'Fullstack Developer',
-                years: 'November 2019 - February 2020'
-            },
-            {
-                university: 'Course-Net Indonesia',
-                qualification: 'Android Developer',
-                years : 'August - September 2019'
-            },
-            {
-                university: 'BEC Bogor',
-                qualification: 'Businesse Administration',
-                years : 'D3'
-            },
-        ]
-    },
-    {
-        title: 'experience',
-        data: [
-            {
-                company : 'PT. Rembon Karya Digital',
-                role: 'Frontend Developer',
-                years : 'January 2023 - Present'
-            },
-            {
-                company : 'Goorita.com',
-                role: 'Frontend Developer',
-                years : 'August 2022 - December 2022'
-            },
-            {
-                company : 'Aksi Cepat Tanggap',
-                role: 'Frontend Developer',
-                years : 'February - July 2022'
-            },
-            {
-                company : 'PT.Wijaya Karya Tbk',
-                role: 'Procurement Officer',
-                years : 'September - December 2021'
-            }
-        ]
-    }
-]
-
-const skillData = [
-    {
-        title: 'skills',
-        data: [
-            {name: 'HTML & SCSS'},
-            {name: 'React JS & Next JS'},
-            {name: 'React Native'},
-            {name: 'Bootstraps & Material UI'},
-            {name: 'Sadcn/ui & Tailwind Css'},
-            {name: 'Styled-component'},
-            {name: 'Javascript & Typescript'},
-            {name: 'Notion, Clickup, Jira'},
-            {name: 'Github & GitLab'},
-            {name: 'Typing Skill'},
-
-        ]
-    },
-    {
-        title: 'tools',
-        data: [
-            {imgPath: '/about/vscode.svg'},
-            {imgPath: '/about/figma.svg'},
-            {imgPath: '/about/notion.svg'},
-            {imgPath: '/about/vscode.svg'},
-            {imgPath: '/about/vscode.svg'},
-            {imgPath: '/about/vscode.svg'},
-        ]
-    },
-]
+import { qualificationData } from "./DummyQualificationData";
+import { skillData } from "./DummySkillData";
+import { infoData } from "./DummyInfoData";
 
 const About = () => {
     const getData = (arr, title) => {
         return arr.find((item) => item.title === title)
     }
-    // console.log('getdata', getData(qualificationData, 'education'))
     console.log('skill data', skillData)
   return (
     <section className="xl:h-[860px] pb-0 xl:py-0 mt-24 xl:mt-48 mb-24 xl:mb-0">
@@ -287,6 +198,20 @@ const About = () => {
                     </Tabs>
                 </div>
             </div>
+              {/* image mobile */}
+              <div className="xl:hidden flex flex-1 relative items-center justify-center mt-24">
+                    {/* <DevImgAbout containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[405px] h-[405px] bg-no-repeat relative flex items-center justify-center' 
+                    imgSrc={'/about/working.png'}
+                    height={355}
+                    width={293}
+                    /> */}
+                    <Image 
+                    src={'/about/working.png'}
+                    alt="img-work"
+                    height={250}
+                    width={250}
+                    />
+                </div>
         </div>
     </section>
   )

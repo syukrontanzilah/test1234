@@ -20,7 +20,7 @@ const About = () => {
     const getData = (arr, title) => {
         return arr.find((item) => item.title === title)
     }
-    console.log('skill data', skillData)
+    // console.log('skill data', skillData)
   return (
     <section className="xl:h-[860px] pb-0 xl:py-0 mt-24 xl:mt-48 mb-24 xl:mb-0">
         <div className="container m-auto">

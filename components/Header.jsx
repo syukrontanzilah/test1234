@@ -9,7 +9,7 @@ import ThemeToggler from './ThemeToggler';
 const Header = () => {
     const [header, setHeader] = useState(false);
     const pathname = usePathname();
-    console.log('path name ==>', pathname);
+    // console.log('path name ==>', pathname);
 
 useEffect(()=>{
     const scrollYPos = window.addEventListener('scroll', () => {
